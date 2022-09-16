@@ -251,7 +251,23 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
+console.log(5 % 2);
+console.log(8 % 3); // 8 = 8 * 3 + 2
 
+console.log(6 % 2);
+
+const isEven = n => n % 2 === 0;
+
+console.log(isEven(8));
+
+labelBalance.addEventListener('click', function () {
+  [...document.querySelectorAll('.movements__row')].forEach(function (row, i) {
+    if (i % 2 === 0) row.style.backgroundColor = 'orangered';
+    if (i % 3 === 0) row.style.backgroundColor = 'blue';
+  });
+});
+
+/*
 // Parsing
 console.log(Number.parseInt('30px', 10));
 console.log(Number.parseFloat('2.5rem'));
@@ -278,4 +294,8 @@ console.log(Math.round(23.3));
 console.log(Math.round(23.9));
 
 // Rounding decimals
-console.log((2.7).toFixed(0));
+console.log((2.7).toFixed(0)); 
+
+
+
+*/
