@@ -251,6 +251,22 @@ btnSort.addEventListener('click', function (e) {
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
+
+console.log(2 ** 53 - 1);
+
+// Creating Big Int numbers
+console.log(56449879854984798798798475415645646n);
+console.log(BigInt(5154545454556565989868383868595965353535353535));
+
+console.log();
+
+/*
+// 287,460,000,000
+const diameter = 287_460_000_000;
+
+const priceCents = 345_99;
+
+
 console.log(5 % 2);
 console.log(8 % 3); // 8 = 8 * 3 + 2
 
@@ -267,7 +283,7 @@ labelBalance.addEventListener('click', function () {
   });
 });
 
-/*
+
 // Parsing
 console.log(Number.parseInt('30px', 10));
 console.log(Number.parseFloat('2.5rem'));
